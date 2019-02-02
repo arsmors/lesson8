@@ -21,6 +21,7 @@ import com.example.den.lesson8.Interfaces.PhotoItem;
 import com.example.den.lesson8.Interfaces.PhotoItemsPresenter;
 import com.example.den.lesson8.Interfaces.PhotoItemsPresenterCallbacks;
 import com.example.den.lesson8.Presenters.PhotoItemPresenterGridView;
+import com.onesignal.OneSignal;
 import com.orm.SugarRecord;
 
 import java.util.ArrayList;
@@ -44,7 +45,15 @@ public class MainActivity extends Activity implements PhotoItemsPresenterCallbac
         showImgService(ImgServices.GIPHY);
 
         showNotificationAfterDelay(getBasicNotification());
+
+        OneSignal.startInit(this)
+                .inFocusDisplaying(OneSignal.OSInFocusDisplayOption.Notification)
+                .unsubscribeWhenNotificationsAreDisabled(true)
+                .init();
+
+       // OneSignal.setEmail("arsens.morins@chi.lv");
     }
+
 
     private void showImgService(ImgServices service) {
 

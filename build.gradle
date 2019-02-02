@@ -4,22 +4,28 @@ buildscript {
     repositories {
         maven {
             url 'https://dl.google.com/dl/android/maven2'
+            maven { url 'https://plugins.gradle.org/m2/'}
         }
         jcenter()
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:3.1.2'
+        classpath 'gradle.plugin.com.onesignal:onesignal-gradle-plugin:[0.11.0, 0.99.99]'
     }
 }
+
+
 
 allprojects {
     repositories {
         google()
         jcenter()
         maven { url "https://jitpack.io"
+            maven { url 'https://maven.google.com' }
         }
     }
 }
+
 
 task clean(type: Delete) {
     delete rootProject.buildDir
