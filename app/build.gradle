@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
 
 
 
@@ -6,7 +7,7 @@ android {
     compileSdkVersion 27
     buildToolsVersion "27.0.3"
     defaultConfig {
-        applicationId "com.example.den.lesson3"
+        applicationId "com.example.den.lesson8"
         minSdkVersion 19
         targetSdkVersion 27
         versionCode 1
@@ -61,4 +62,6 @@ dependencies {
     })
     androidTestImplementation 'junit:junit:4.12'
 }
+
+
 

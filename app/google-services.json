@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "404040105483",
+    "firebase_url": "https://mytestproject-45a3b.firebaseio.com",
+    "project_id": "mytestproject-45a3b",
+    "storage_bucket": "mytestproject-45a3b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:404040105483:android:e0f341f4218e97a4",
+        "android_client_info": {
+          "package_name": "com.example.den.lesson8"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "404040105483-evcd9cdj862tl15aa0a4uv8seijv2hre.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_pva0suEROA7xXpz6xAmZeqsFXzXlyFE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
